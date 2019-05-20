@@ -8,23 +8,30 @@
 
 import UIKit
 
-class SettingPopupViewController: UIViewController {
-
+final class SettingPopupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initialize()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func confirm(_ sender: Any) {
+        dismiss(animated: true) {}
     }
-    */
-
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true) {}
+    }
 }
+
+
+private extension SettingPopupViewController {
+    /// Full initialization
+    func initialize() {
+        initializeLayout()
+    }
+    
+    /// Layout initialization
+    func initializeLayout() {}
+}
+
