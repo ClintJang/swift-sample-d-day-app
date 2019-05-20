@@ -10,6 +10,14 @@ import UIKit
 import SwiftDate
 
 final class ViewController: UIViewController {
+    deinit {
+        // Just..
+        if timer != nil {
+            timer?.invalidate()
+            timer = nil
+        }
+    }
+    
     private struct Temp {
         static let goalDateString = "2019-12-25"
         static let goalDate: Date = {
@@ -25,6 +33,7 @@ final class ViewController: UIViewController {
     /// Remaining date label
     @IBOutlet weak var remainingDateLabel: UILabel!
     
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,18 +54,26 @@ private extension ViewController {
     /// Full initialization
     func initialize() {
         initializeLayout()
+        initializeTimer()
     }
     
     /// Layout initialization
     func initializeLayout() {
         updateDateLabel()
     }
+    
+    /// Timer initialization
+    func initializeTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+            self?.updateDateLabel()
+        }
+    }
 }
 
 private extension ViewController {
     /// update date label
     func updateDateLabel() {
-        self.remainingDateLabel.text = calculateDate()
+        remainingDateLabel.text = calculateDate()
     }
     
     /// Calculate the remaining dates.
