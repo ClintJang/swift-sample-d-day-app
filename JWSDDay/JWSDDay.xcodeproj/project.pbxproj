@@ -19,6 +19,7 @@
 		BC06106D2292D4D90028A4E5 /* SettingPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06106C2292D4D90028A4E5 /* SettingPopupViewController.swift */; };
 		BC06106F2292D4EA0028A4E5 /* SettingPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC06106E2292D4EA0028A4E5 /* SettingPopup.storyboard */; };
 		BC0610712292D78B0028A4E5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC0610702292D78B0028A4E5 /* README.md */; };
+		BC0610742292E3B30028A4E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0610732292E3B30028A4E5 /* Constants.swift */; };
 		CD717348945D837E3315D55C /* Pods_JWSDDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0828A4E2B16DAECC7FD6172 /* Pods_JWSDDay.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		BC06106C2292D4D90028A4E5 /* SettingPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPopupViewController.swift; sourceTree = "<group>"; };
 		BC06106E2292D4EA0028A4E5 /* SettingPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingPopup.storyboard; sourceTree = "<group>"; };
 		BC0610702292D78B0028A4E5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BC0610732292E3B30028A4E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8D15C65278FCBB29E89B413 /* Pods-JWSDDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWSDDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWSDDay/Pods-JWSDDay.release.xcconfig"; sourceTree = "<group>"; };
 		FFED696700C0EA92D8B7228A /* Pods-JWSDDayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWSDDayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWSDDayUITests/Pods-JWSDDayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 		BC06103D2292CC2A0028A4E5 /* JWSDDay */ = {
 			isa = PBXGroup;
 			children = (
+				BC0610722292E2510028A4E5 /* Common */,
 				BC06103E2292CC2A0028A4E5 /* AppDelegate.swift */,
 				BC0610402292CC2A0028A4E5 /* ViewController.swift */,
 				BC0610422292CC2A0028A4E5 /* Main.storyboard */,
@@ -172,6 +175,14 @@
 				BC0610602292CC2C0028A4E5 /* Info.plist */,
 			);
 			path = JWSDDayUITests;
+			sourceTree = "<group>";
+		};
+		BC0610722292E2510028A4E5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC0610732292E3B30028A4E5 /* Constants.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				BC06106D2292D4D90028A4E5 /* SettingPopupViewController.swift in Sources */,
 				BC0610412292CC2A0028A4E5 /* ViewController.swift in Sources */,
 				BC06103F2292CC2A0028A4E5 /* AppDelegate.swift in Sources */,
+				BC0610742292E3B30028A4E5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
