@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        initialize()
     }
-
-
 }
 
+private extension ViewController {
+    /// Full initialization
+    func initialize() {
+        initializeLayout()
+    }
+    
+    /// Layout initialization
+    func initializeLayout() {}
+}
